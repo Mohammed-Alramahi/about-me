@@ -39,24 +39,39 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #1d3557;
 }
-
+ul{
+    padding-left: 40px;
+    list-style-type: square;
+}
+ul li{
+    font:30px sans-serif;
+}
 .container {
     margin: auto;
     margin-bottom: 100px;
     width: 80%;
-    height: 800px;
+    height: 100%;
     background-color: #a8dadc;
     box-shadow: 0 0 6px #000;
     text-shadow: 2px 2px 8px  #f17575;
 }
 
-#intro {
+p{
     font: 30px sans-serif;
     margin-left: 15px;
+}
+ol{
+    list-style-type: decimal;
+    padding-left: 50px;
+    
+}
+ol li{
+    font:30px sans-serif;
 }
 
 #intro-header {
     padding-top: 50px;
-    font: 30px sans-serif;
-    margin-left: 35px;
+    font:bold 40px sans-serif;
+    
+    margin-left: 15px;
 }

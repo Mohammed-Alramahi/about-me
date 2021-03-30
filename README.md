@@ -6,7 +6,7 @@
 
 ### Links and Resources
 
-[live site preview]("https://mohammed-alramahi.github.io/about-me/.")
+[live site preview](https://mohammed-alramahi.github.io/about-me/)
 
 ### Reflections and Comments
 **overall:**
@@ -15,10 +15,17 @@
 **Timeline:**
  - I thought that it won't take much of a time like maybe 2 hours but it took more time actually.
  - I've worked on this project from 1:00 pm till 5 pm in class 2.
-
-**Today we learned:** 
+ - I've worked on this project from 2:00 pm till 5 pm in class 3.
+**Today we learned:(class-02)** 
  - To add License and .gitignore files and why we use them.
  - More on `if` statement.
  - How to write switch/case in Javascript and the purpose of using them.
  - We dug deeper into logical operators in Javascript and we review our knowledge about data types.
  - We Used `'use strict'` which will help us write cleaner code in Javascript.
+ 
+**Today we learned:(class-03)** 
+ - More about loops.
+ - Truthy and falsy values.
+ - arrays and how we use them.
+ - combination between loops and arrays.
+ 
