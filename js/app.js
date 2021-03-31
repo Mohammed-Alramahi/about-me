@@ -125,9 +125,10 @@ question6();
 
 //question #7
 //csgo,gta,dirt only these are the correct answers
-alert('This one is a bit tricky, but I want to push you a little bit further');
+function question7(){
+  alert('This one is a bit tricky, but I want to push you a little bit further');
 let games = ['csgo', 'gta', 'dirt'];
-let userGame = prompt('which one of these games Do I prefer most?\n csgo,pubg,lol,poker,gta,dirt,fifa,pes').toLowerCase();
+let userGame = prompt('which one of these games Do I prefer most?\n csgo, gta, dirt').toLowerCase();
 let result = false;
 for (let i = 5; i >= 0; i--) {
 
@@ -146,5 +147,8 @@ for (let i = 5; i >= 0; i--) {
     userGame = prompt(`try again you still have ${i} tries left`);
   }
 }
+}
+question7();
+
 document.getElementById('intro-header').innerHTML = `Congrats,  ${userName} you got ${userPoints} out of 7`;
 
