@@ -82,7 +82,8 @@ question4();
 
 
 //question #5
-let isOld = prompt('Am I old to be a here?').toLowerCase();
+function question5(){
+  let isOld = prompt('Am I old to be a here?').toLowerCase();
 while (isOld !== 'yes' && isOld !== 'y' && isOld !== 'no' && isOld !== 'n') {
   isOld = prompt('try typing yes/y or no/n only please!').toLowerCase();
 }
@@ -95,6 +96,10 @@ else {
   alert('I\'m only 23 so yeah, I\'m not old :D ');
 }
 console.log(userPoints);
+
+}
+question5();
+
 //question #6
 alert('You are no doing bad so far, This one should be easy for you');
 let userNumberInput = prompt('on a scale of 1 to 10 what do you think about me?');
