@@ -27,7 +27,8 @@ question1();
 
 
 //question #2
-let isCool = prompt('Do you think I\'m cool? answer with yes or I\'ll kill you :p').toLowerCase();
+function question2(){
+  let isCool = prompt('Do you think I\'m cool? answer with yes or I\'ll kill you :p').toLowerCase();
 while (isCool !== 'yes' && isCool !== 'y' && isCool !== 'no' && isCool !== 'n') {
   isCool = prompt('try typing yes/y or no/n only please!').toLowerCase();
 }
@@ -40,7 +41,8 @@ else {
 
   alert('what do you mean by no :\\ I\'m kinda disappointed');
 }
-
+}
+ question2();
 
 //question #3
 let programmingPrefer = prompt('Would I rather to be programmer instead of being rich?').toLowerCase();
