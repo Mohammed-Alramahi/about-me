@@ -29,54 +29,54 @@ question1();
 //question #2
 function question2(){
   let isCool = prompt('Do you think I\'m cool? answer with yes or I\'ll kill you :p').toLowerCase();
-while (isCool !== 'yes' && isCool !== 'y' && isCool !== 'no' && isCool !== 'n') {
-  isCool = prompt('try typing yes/y or no/n only please!').toLowerCase();
-}
-//console.log(userName + ' answered: ' + isCool + ' for the second question');
-if (isCool === 'yes' || isCool === 'y') {
-  userPoints++;
-  alert('of course I\'m cool, thx a lot <3 ');
-}
-else {
+  while (isCool !== 'yes' && isCool !== 'y' && isCool !== 'no' && isCool !== 'n') {
+    isCool = prompt('try typing yes/y or no/n only please!').toLowerCase();
+  }
+  //console.log(userName + ' answered: ' + isCool + ' for the second question');
+  if (isCool === 'yes' || isCool === 'y') {
+    userPoints++;
+    alert('of course I\'m cool, thx a lot <3 ');
+  }
+  else {
 
-  alert('what do you mean by no :\\ I\'m kinda disappointed');
+    alert('what do you mean by no :\\ I\'m kinda disappointed');
+  }
 }
-}
- question2();
+question2();
 
 //question #3
 function question3(){
   let programmingPrefer = prompt('Would I rather to be programmer instead of being rich?').toLowerCase();
-while (programmingPrefer !== 'yes' && programmingPrefer !== 'y' && programmingPrefer !== 'no' && programmingPrefer !== 'n') {
-  programmingPrefer = prompt('try typing yes/y or no/n only please!').toLowerCase();
-}
-//console.log(userName + ' answered: ' + programmingPrefer + ' for the third question');
+  while (programmingPrefer !== 'yes' && programmingPrefer !== 'y' && programmingPrefer !== 'no' && programmingPrefer !== 'n') {
+    programmingPrefer = prompt('try typing yes/y or no/n only please!').toLowerCase();
+  }
+  //console.log(userName + ' answered: ' + programmingPrefer + ' for the third question');
 
-if (programmingPrefer === 'yes' || programmingPrefer === 'y') {
-  alert('Wrong answer, I like programming but I like money more :D');
-}
-else {
-  userPoints++;
-  alert('Gimme money!!!!');
-}
+  if (programmingPrefer === 'yes' || programmingPrefer === 'y') {
+    alert('Wrong answer, I like programming but I like money more :D');
+  }
+  else {
+    userPoints++;
+    alert('Gimme money!!!!');
+  }
 }
 question3();
 
 //question #4
 function question4(){
   let favLaunch = prompt('Is mansaf my favourite thing to eat? If I was you, I\'ll totally answer yes').toLowerCase();
-while (favLaunch !== 'yes' && favLaunch !== 'y' && favLaunch !== 'no' && favLaunch !== 'n') {
-  favLaunch = prompt('try typing yes/y or no/n only please!').toLowerCase();
-}
-//console.log(userName + ' answered: ' + favLaunch + ' for the third question');
+  while (favLaunch !== 'yes' && favLaunch !== 'y' && favLaunch !== 'no' && favLaunch !== 'n') {
+    favLaunch = prompt('try typing yes/y or no/n only please!').toLowerCase();
+  }
+  //console.log(userName + ' answered: ' + favLaunch + ' for the third question');
 
-if (favLaunch === 'yes' || favLaunch === 'y') {
-  userPoints++;
-  alert('specially on friday.. yummy!');
-}
-else {
-  alert('what are you talking about? mansaf is the best');
-}
+  if (favLaunch === 'yes' || favLaunch === 'y') {
+    userPoints++;
+    alert('specially on friday.. yummy!');
+  }
+  else {
+    alert('what are you talking about? mansaf is the best');
+  }
 }
 question4();
 
@@ -84,18 +84,18 @@ question4();
 //question #5
 function question5(){
   let isOld = prompt('Am I old to be a here?').toLowerCase();
-while (isOld !== 'yes' && isOld !== 'y' && isOld !== 'no' && isOld !== 'n') {
-  isOld = prompt('try typing yes/y or no/n only please!').toLowerCase();
-}
-//console.log(userName + ' answered: ' + isOld + ' for the last question');
-if (isOld === 'yes' || isOld === 'y') {
-  alert('Is 23 years age considered old? weird!!');
-}
-else {
-  userPoints++;
-  alert('I\'m only 23 so yeah, I\'m not old :D ');
-}
-console.log(userPoints);
+  while (isOld !== 'yes' && isOld !== 'y' && isOld !== 'no' && isOld !== 'n') {
+    isOld = prompt('try typing yes/y or no/n only please!').toLowerCase();
+  }
+  //console.log(userName + ' answered: ' + isOld + ' for the last question');
+  if (isOld === 'yes' || isOld === 'y') {
+    alert('Is 23 years age considered old? weird!!');
+  }
+  else {
+    userPoints++;
+    alert('I\'m only 23 so yeah, I\'m not old :D ');
+  }
+
 
 }
 question5();
@@ -103,52 +103,82 @@ question5();
 //question #6
 function question6(){
   alert('You are no doing bad so far, This one should be easy for you');
-let userNumberInput = prompt('on a scale of 1 to 10 what do you think about me?');
-for (let i = 0; i < 4; i++) {
-
-  if (userNumberInput < 7) {
-    alert('have you lost your mind? I deserve more than that!');
-    userNumberInput = prompt('try again, on a scale of 1 to 10 what do you think about me?');
-  }
-  else if (userNumberInput > 5 && userNumberInput <= 9) {
-    alert('You are getting there, but still not right :)');
-    userNumberInput = prompt('try again, on a scale of 1 to 10 what do you think about me?');
-  }
-  if (userNumberInput === '10') {
-    userPoints++;
-    alert('Be my friend !, you are pretty smart');
-    break;
-  }
-}
+  let userNumberInput = prompt('on a scale of 1 to 10 what do you think about me?');
+  for (let i = 3; i >=0; i--) {
+    console.log(i);
+    if(i!==0)
+    {
+      if (userNumberInput < 7) {
+        alert(`have you lost your mind? I deserve more than that!\n You have ${i} tries left`);
+        userNumberInput = prompt('try again, on a scale of 1 to 10 what do you think about me?');
+      }
+      else if (userNumberInput > 5 && userNumberInput <= 8) {
+        alert(`You are getting there, but still not right :)\n You have ${i} tries left`);
+        userNumberInput = prompt('try again, on a scale of 1 to 10 what do you think about me?');
+      }
+      if (userNumberInput === '10') {
+        userPoints++;
+        alert('10 is my low I know :)');
+        break;
+      }
+    }
+    else{
+      alert('that question was very simple but unfotunately\n you couldn\'t manage to guess 10 -_-');
+    }
+    }
+    
+   
 }
 question6();
 
 //question #7
-//csgo,gta,dirt only these are the correct answers
 function question7(){
-  alert('This one is a bit tricky, but I want to push you a little bit further');
-let games = ['csgo', 'gta', 'dirt'];
-let userGame = prompt('which one of these games Do I prefer most?\n csgo, gta, dirt').toLowerCase();
-let result = false;
-for (let i = 5; i >= 0; i--) {
-
-  for (let j = 0; j < games.length; j++) {
-    if (userGame === games[j]) {
-      result = true;
-      break;
+  let games=['gta','csgo','dirt','pes','fifa'];
+  let userInput=null;
+  let flag=false;
+  let tries=5;
+  Tries:while(tries>=0){
+    
+    userInput=prompt('can you guess my favourite games?').toLowerCase();
+    for(let i=0;i<games.length;i++){
+      if(userInput===games[i]){
+       flag=true;
+       break Tries;
+      }
     }
+    if(tries>0){
+      if(tries<=3){
+        alert(`You have ${tries} tries choose wisely!\n try one of these but this considered cheating ${games}`);
+      }
+      else{
+        alert(`You have ${tries} tries choose wisely!`);
+      }
+      
+    }
+    else{
+      alert('You didn\'t answer correctly');
+    }
+    tries--;
+    
+    
   }
-  if (result === true) {
-    userPoints++;
-    alert(`Oh boy this getting spicy!!`);
-    break;
+  if(flag){
+    alert('You are correct my dear');
   }
-  else {
-    userGame = prompt(`try again you still have ${i} tries left`);
+  else{
+    alert(`The correct answer was one of those ${games}`);
   }
-}
 }
 question7();
-
-document.getElementById('intro-header').innerHTML = `Congrats,  ${userName} you got ${userPoints} out of 7`;
+if(userPoints>=4&&userPoints<6)
+{
+  document.getElementById('intro-header').innerHTML = `That was not bad,  ${userName} you got ${userPoints} out of 7`;
+}
+else if(userPoints>=6)
+{
+  document.getElementById('intro-header').innerHTML = `Congrats!!,  ${userName} you got ${userPoints} out of 7`;
+}
+else if(userPoints<4){
+  document.getElementById('intro-header').innerHTML = `U might want to study dear:   ${userName} you got ${userPoints} out of 7`;
+}
 
