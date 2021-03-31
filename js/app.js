@@ -45,7 +45,8 @@ else {
  question2();
 
 //question #3
-let programmingPrefer = prompt('Would I rather to be programmer instead of being rich?').toLowerCase();
+function question3(){
+  let programmingPrefer = prompt('Would I rather to be programmer instead of being rich?').toLowerCase();
 while (programmingPrefer !== 'yes' && programmingPrefer !== 'y' && programmingPrefer !== 'no' && programmingPrefer !== 'n') {
   programmingPrefer = prompt('try typing yes/y or no/n only please!').toLowerCase();
 }
@@ -58,7 +59,8 @@ else {
   userPoints++;
   alert('Gimme money!!!!');
 }
-
+}
+question3();
 
 //question #4
 let favLaunch = prompt('Is mansaf my favourite thing to eat? If I was you, I\'ll totally answer yes').toLowerCase();
