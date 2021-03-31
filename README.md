@@ -28,5 +28,9 @@
  - More about loops.
  - Truthy and falsy values.
  - arrays and how we use them.
- - combination between loops and arrays.
+ - combination between loops and arrays.        
+
+
+- The Driver: Haneen Abonser
+- The Navigator: Mohammed Alramahi 
  
