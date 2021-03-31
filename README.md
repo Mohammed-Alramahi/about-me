@@ -16,6 +16,7 @@
  - I thought that it won't take much of a time like maybe 2 hours but it took more time actually.
  - I've worked on this project from 1:00 pm till 5 pm in class 2.
  - I've worked on this project from 2:00 pm till 5 pm in class 3.
+ 
 **Today we learned:(class-02)** 
  - To add License and .gitignore files and why we use them.
  - More on `if` statement.
