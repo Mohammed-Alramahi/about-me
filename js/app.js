@@ -6,18 +6,24 @@ alert('Hello ' + userName + ' I hope you are doing great');
 alert('I\'d like to play a game If you guess right then you rock!, answer with yes/y or no/n');
 
 //question #1
-let myHobby = prompt('Do you think gaming is my favourite hobby?').toLowerCase();
-while (myHobby !== 'yes' && myHobby !== 'y' && myHobby !== 'no' && myHobby !== 'n') {
-  myHobby = prompt('try typing yes/y or no/n only please!').toLowerCase();
+
+function question1(){
+
+  let myHobby = prompt('Do you think gaming is my favourite hobby?').toLowerCase();
+  while (myHobby !== 'yes' && myHobby !== 'y' && myHobby !== 'no' && myHobby !== 'n') {
+    myHobby = prompt('try typing yes/y or no/n only please!').toLowerCase();
+  }
+  //console.log(userName + ' answered: ' + myHobby + ' for the first question');
+  if (myHobby === 'yes' || myHobby === 'y') {
+    alert('You guessed right, I mean who doesn\'t like gaming');
+    userPoints++;
+  }
+  else {
+    alert('Wrong one but it\'s okay');
+  }
 }
-//console.log(userName + ' answered: ' + myHobby + ' for the first question');
-if (myHobby === 'yes' || myHobby === 'y') {
-  alert('You guessed right, I mean who doesn\'t like gaming');
-  userPoints++;
-}
-else {
-  alert('Wrong one but it\'s okay');
-}
+question1();
+
 
 
 //question #2
