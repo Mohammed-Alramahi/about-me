@@ -101,7 +101,8 @@ console.log(userPoints);
 question5();
 
 //question #6
-alert('You are no doing bad so far, This one should be easy for you');
+function question6(){
+  alert('You are no doing bad so far, This one should be easy for you');
 let userNumberInput = prompt('on a scale of 1 to 10 what do you think about me?');
 for (let i = 0; i < 4; i++) {
 
@@ -119,6 +120,9 @@ for (let i = 0; i < 4; i++) {
     break;
   }
 }
+}
+question6();
+
 //question #7
 //csgo,gta,dirt only these are the correct answers
 alert('This one is a bit tricky, but I want to push you a little bit further');
