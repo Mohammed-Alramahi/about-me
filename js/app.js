@@ -63,7 +63,8 @@ else {
 question3();
 
 //question #4
-let favLaunch = prompt('Is mansaf my favourite thing to eat? If I was you, I\'ll totally answer yes').toLowerCase();
+function question4(){
+  let favLaunch = prompt('Is mansaf my favourite thing to eat? If I was you, I\'ll totally answer yes').toLowerCase();
 while (favLaunch !== 'yes' && favLaunch !== 'y' && favLaunch !== 'no' && favLaunch !== 'n') {
   favLaunch = prompt('try typing yes/y or no/n only please!').toLowerCase();
 }
@@ -76,6 +77,8 @@ if (favLaunch === 'yes' || favLaunch === 'y') {
 else {
   alert('what are you talking about? mansaf is the best');
 }
+}
+question4();
 
 
 //question #5
